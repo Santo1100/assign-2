@@ -65,7 +65,7 @@ body{
   aspect-ratio: 16 / 9;      
   border-radius: 1.5rem;
   overflow: hidden;
-  background: #0f071a;
+  
   
 }
 
@@ -143,7 +143,7 @@ body{
 }
 
 .card{
-
+    background-color: #250d44;
     border: 1px solid #ff900e;
     width: 306px;
     height: 334px;
@@ -152,6 +152,62 @@ body{
     justify-content: center;
     text-align: center;
     margin-bottom: 1.2rem;
+    padding:2px;
+    position: relative;
+}
+
+@property --angle{
+
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+.card::after, .card::before{
+  
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+ background-image: conic-gradient(from var(--angle),transparent 80%, rgb(128, 0, 75));
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  z-index: -1;
+  border-radius: 18px;
+  padding: 10px;
+
+  animation: 3s spin linear infinite;
+   
+     
+}
+
+.card::before{
+
+  filter: blur(1.5rem);
+  opacity: 0.8;
+}
+
+.card::after {
+  opacity: 4.2;
+  filter: blur(0.4rem);   
+}
+
+@keyframes spin{
+
+  from{
+
+    --angle: 0deg;
+
+  }
+
+  to{
+
+    --angle:360deg;
+
+  }
+
+
 }
 
 
@@ -258,6 +314,19 @@ body{
   top: 20.2px;
   right: -24.7px;
 }
+
+
+.b-icon{
+
+  background-color: #F7E93F;
+  border: 2px  solid grey;
+  border-radius: 8px;
+  background-color: transparent;
+  padding: 4px;
+  
+}
+
+
 
 
 
