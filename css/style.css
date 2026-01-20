@@ -252,6 +252,13 @@ body{
   height: 2rem;
 }
 
+.icon-spot{
+
+  position: relative;
+  top: 20.2px;
+  right: -24.7px;
+}
+
 
 
 
@@ -304,8 +311,8 @@ body{
   position: relative;
 
   top: 9.2rem;
-  left: -1.4rem;
-  margin: 0 auto;
+  left: -0.4rem;
+  margin-bottom: 5.4rem;
 }
 
 body{
