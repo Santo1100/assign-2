@@ -146,13 +146,15 @@ body{
 
     border: 1px solid #ff900e;
     width: 306px;
-    height: 399px;
+    height: 334px;
     border-radius: 19px;
     align-items: center;
     justify-content: center;
     text-align: center;
     margin-bottom: 1.2rem;
 }
+
+
 
 .i-frame{
 
@@ -235,6 +237,21 @@ body{
 
 }
 
+.hamburger{
+
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+.ham-icon{
+
+  width: 2rem;
+  height: 2rem;
+}
+
 
 
 
@@ -249,6 +266,59 @@ body{
 
   
  }
+
+ .hamburger{
+
+   display: block; 
+
+ 
+
+  
+}
+
+.nav-links{
+
+  display: none;
+}
+
+.copy-right{
+
+  
+}
+
+body{
+
+  margin: 0;
+  padding: 0;
+}
+
+.card-container{
+
+  padding-top: 10%;
+
+  margin-top: 20%;
+}
+
+.card-header{
+
+  position: relative;
+
+  top: 9.2rem;
+  left: -1.4rem;
+  margin: 0 auto;
+}
+
+body{
+
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.footer-icons{
+
+  position: absolute;
+  top: 12.8rem;
+}
     
     
 }
